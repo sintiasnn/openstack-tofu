@@ -4,5 +4,6 @@
 terraform.tfstate*
 terraform.tfvars*
 !terraform.tfvars.example
+terraform.auto.tfvars
 
 # Specific directories for individual projects
