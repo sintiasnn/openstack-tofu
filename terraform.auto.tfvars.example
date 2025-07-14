@@ -1,20 +1,20 @@
 instance_type = {
-  "bastion" : "t3a.micro"
-  "master" : "t3a.small"
-  "worker" : "t3a.small"
-  "master-dev-staging" : "t3a.micro"
-  "worker-dev-staging" : "t3a.micro"
+  "bastion" : ""
+  "master" : ""
+  "worker" : ""
+  "master-dev-staging" : ""
+  "worker-dev-staging" : ""
   "monitoring" : "t3a.medium"
   "database" : "t3a.medium"
-  "database-dev-staging" : "t3a.small"
+  "database-dev-staging" : ""
   "nginx" : "t3a.medium"
-  "nginx-dev-staging" : "t3a.small"
+  "nginx-dev-staging" : ""
 }
-project          = "lgtm"
-public_key_path  = "~/.ssh/id_rsa.pub"
-region           = "ap-southeast-1"
-ubuntu_jammy_ami = "ami-0e0ddf453092e1e37"
-ubuntu_noble_ami = "ami-0b874c2ac1b5e9957"
+project          = ""
+public_key_path  = ""
+region           = ""
+ubuntu_jammy_ami = ""
+ubuntu_noble_ami = ""
 user_data_ec2 = {
   "bastion" : "user-data.sh",
   "master" : "user-data-master.sh",
@@ -24,13 +24,13 @@ user_data_ec2 = {
   "nginx" : "user-data-nginx.sh"
 }
 volume = {
-  "bastion" : 10,
-  "master" : 15,
-  "monitoring" : 20,
-  "worker" : 15,
-  "database" : 20,
-  "nginx" : 20,
-  "database-dev-staging" : 25
+  "bastion" :,
+  "master" : ,
+  "monitoring" :,
+  "worker" : ,
+  "database" :,
+  "nginx" : ,
+  "database-dev-staging" :
 }
-vpc_cidr_block = "10.201.0.0/16"
-priv_key       = "~/.ssh/id_rsa"
+vpc_cidr_block = ""
+priv_key       = ""
