@@ -35,7 +35,7 @@ provider "openstack" {
 
 #create storage state
 resource "openstack_objectstorage_container_v1" "states_bucket" {
-  name = openstack-state-buckets
+  name = "openstack-state-buckets"
   metadata = {
     "purpose" = "terraform-state"
   }
