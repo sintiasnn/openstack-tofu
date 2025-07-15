@@ -1,36 +1,5 @@
-instance_type = {
-  "bastion" : ""
-  "master" : ""
-  "worker" : ""
-  "master-dev-staging" : ""
-  "worker-dev-staging" : ""
-  "monitoring" : "t3a.medium"
-  "database" : "t3a.medium"
-  "database-dev-staging" : ""
-  "nginx" : "t3a.medium"
-  "nginx-dev-staging" : ""
-}
-project          = ""
-public_key_path  = ""
-region           = ""
-ubuntu_jammy_ami = ""
-ubuntu_noble_ami = ""
-user_data_ec2 = {
-  "bastion" : "user-data.sh",
-  "master" : "user-data-master.sh",
-  "master_join" : "user-data-master-join.sh",
-  "monitoring" : "user-data-monitoring.sh",
-  "worker" : "user-data-worker.sh"
-  "nginx" : "user-data-nginx.sh"
-}
-volume = {
-  "bastion" :,
-  "master" : ,
-  "monitoring" :,
-  "worker" : ,
-  "database" :,
-  "nginx" : ,
-  "database-dev-staging" :
-}
-vpc_cidr_block = ""
-priv_key       = ""
+user_name   = ""
+tenant_name = ""
+password    = ""
+auth_url    = ""
+region      = ""
