@@ -32,3 +32,11 @@ provider "openstack" {
   auth_url    = var.auth_url
   region      = var.region
 }
+
+#create storage state
+resource "openstack_objectstorage_container_v1" "states_bucket" {
+  name = openstack-state-buckets
+  metadata = {
+    "purpose" = "terraform-state"
+  }
+}
