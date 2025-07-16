@@ -1,14 +1,17 @@
 terraform {
-  # backend "s3" {
-  #   bucket         = "lgtm-bucket-states"
-  #   key            = "state/terraform.tfstate"
-  #   region         = "ap-southeast-1"
-  #   encrypt        = true
-  #   dynamodb_table = "lgtm-locks"
-  # }
-  backend "local" {
-    
+  backend "s3" {
+    bucket                      = "openstack-state-bucket"
+    key                         = "dev/terraform.tfstate"
+    region                      = "RegionOne"
+    endpoint                    = "http://10.0.0.7:8080"
+    skip_credentials_validation = true
+    skip_metadata_api_check     = true
+    force_path_style            = true
   }
+
+  # backend "local" {
+    
+  # }
 }
 
 terraform {
